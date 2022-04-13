@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="Chuva • Exercicio Frontend" content="" />
+        <title>Chuva Inc</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" type="text/css" />              
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <link href="css/styles.css" rel="stylesheet" />       
+    </head>
+
+    <body> 
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container-fluid">   
+                <div class="navbar-brand rectangleMenu alignCenter" style="font-size: 2.25em; color: aliceblue;" href="#"><b>SLACA 2019</b></div>                    
+                <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav flex-column">  
+                                                                    
+                        <div class="navbar-brand-desktop rectangleMenu alignCenter" style="font-size: 2.25em; color: aliceblue;" href="#"><b>SLACA 2019</b></div>
+                        <img class="navbar-brand-desktop" src="assets/img/dewey 4.png">
+                                                               
+                        <li class="nav-item">
+                            <a style="padding-left: 25px;" class="nav-link" href="#" id="Apresentação" onclick="isSelected(this.id), isSelectedPage('vazio')">Apresentação</a>
+                        </li>
+                        <hr class="m-0" />                         
+                        <li class="nav-item">
+                            <a style="padding-left: 25px;" class="nav-link" href="#" id="Comitês" onclick="isSelected(this.id), isSelectedPage('vazio')">Comitês</a>
+                        </li>
+                        <hr class="m-0" />                        
+                        <li class="nav-item">
+                            <a style="padding-left: 25px;" class="nav-link" href="#" id="Autores" onclick="isSelected(this.id), isSelectedPage('vazio')">Autores</a>
+                        </li>
+                        <hr class="m-0" />
+                        <li class="nav-item">
+                            <a style="padding-left: 25px;" class="nav-link" href="#" id="Eixos" onclick="isSelected(this.id), isSelectedPage('vazio')">Eixos temáticos</a>
+                        </li>                        
+                        <hr class="m-0" />
+                        <li class="nav-item">
+                            <a style="padding-left: 25px; background-color: #FDF1EB;
+                            border-left:  5px solid;
+                            border-image: linear-gradient(#FFB455, #ED7839) 1 100%;" class="nav-link" href="#" id="Trabalhos" onclick="isSelected(this.id), isSelectedPage('PageTrabalhos')">Trabalhos</a>
+                        </li>
+                        <hr class="m-0" />                        
+                        <li class="nav-item">
+                            <a style="padding-left: 25px;" class="nav-link" href="#" id="Contato" onclick="isSelected(this.id), isSelectedPage('vazio')">Contato</a>
+                        </li>
+                        <hr class="m-0" />
+                    </ul>                       
+                </div>
+            </div>
+        </nav>       
+
+        
+        <div class="PageTrabalhos" id="PageTrabalhos">  
+                     
+            <div class="tituloTrabalhos">    
+                <div class="container">
+                    <div class="row alignVertical marginLateralEsquerda">
+                        <div class="col-10 col-sm-10 col-md-10 col-lg-8 col-xl-8"> 
+                            <ul class="nav justify-content">
+                                <div class="nav-item">
+                                    <h6>Anais do Simpósio Latino Americano de Ciências de Alimentos</h6> 
+                                    <h1 style="margin-top: -7px;">Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</h1> 
+                                    <h6 style="margin-top: -10px;">ISSN: 1234-5678</h6>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <div class="col">
+                            <ul class="nav justify-content-end">  
+                                <div class="nav-item">
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          <h6 class="alignCenter" style="font-family: 'Quicksand'; color: black;"><img style="margin-top: -2px; margin-left: -5px;" src="assets/img/language image.png">PT, BR <img style="margin-left: 4px;" src="assets/img/dropdown.png"></h6>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">                                
+                                          <div class="dropdown-item" href="#"><h6 style="font-family: 'Quicksand'; color: black;">PT, BR</h6></div>
+                                          <div class="dropdown-item" href="#"><h6 style="font-family: 'Quicksand'; color: black;">EN, EUA</h6></div>                              
+                                        </ul>
+                                    </div>                                   
+                                </div>  
+                                
+                                <div class="nav-item">
+                                    <ul class="nav justify-content-end">
+                                        <div class="nav-item" style="margin-left: 30px;">
+                                            <h6 style="font-family: Quicksand; color: black; text-align: right; width: auto;">Bem vindo!</h6>
+                                            <h6 style="font-family: Quicksand; color: black; text-align: right; margin-top: -7px; width: auto;">guhhh25@gmail.com</h6>
+                                        </div>
+                                        <div id="Notification" class="nav-item">
+                                            <img id="imgStyle" style="width: 30px; border-radius: 100%; margin-left: 5px;" src="assets/img/profile.png">
+                                            <div id="notIcon"></div>
+                                        </div>
+                                    </ul>                                    
+                                </div>  
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+            
+             
+            <div class="marginLateralDireita">
+                <div class="container">
+                    <div class="row alignCenter marginLateralEsquerda">
+                        <div class="col-xs-11 col-sm-11 col-md-11 col-lg-8">
+                            <h2><b>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP</b></h2> 
+                        </div>
+    
+                        <div class="col">
+                            <ul class="nav justify-content-end">  
+                                <div class="nav-item">
+                                    <button type="button" class="btn btn-orange"><h4><img src="assets/img/downloadIcon.png"> Download</h4></button>
+                                    <button type="button" class="btn btn-orange"><h4><img src="assets/img/star.png"></h4></button>
+                                    <a href="https://www.doi.org/">
+                                        <button type="button" class="btn btn-orange"><h4><img src="assets/img/doi.png"></h4></button>
+                                    </a>                                    
+                                    <h4 style="color: #ED7839; margin-left: -15px;">COMO CITAR ESSE TRABALHO?</h4>
+                                </div>
+                            </ul>                                                        
+                        </div>
+                    </div>               
+                
+                    <div class="row marginLateralEsquerda">
+                        <div class="col col-xl-8">
+                            <div id="videoID" class="ratio ratio-16x9">                                
+                                <iframe id="video" src="https://www.youtube.com/embed/DBXH9jJRaDk?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com" title="YouTube video" allowfullscreen></iframe>
+                            </div>
+                        </div>
+    
+                        <div class="col">
+                            <ul class="nav justify-content-end">  
+                                <div class="nav-item">
+                                    <div id="CardDetalhes" class="card size-card-detalhes">
+                                        <div class="card-header align-middle">
+                                          <h2 style="padding-top: 0px!important; padding-bottom: 0px!important; color: black;"><b>Detalhes</b></h2>
+                                        </div>
+                                        <div class="card-body overflow-auto" style="background-color: white;">                                            
+                                            <p>Tipo de Apresentação: <b>Pôster</b>
+                                            <br>Eixo temático: <b>Alimentação e saúde (AS)</b>
+                                            <br>Palavras-chaves: <b>Alimentos funcionais, alimentação escolar.</b></p>
+                                            <br>
+                                            <h6 style="font-family: 'Quicksand';"><b>Autores:</b></h6>
+                                            <h6 style="font-family: 'Quicksand';">Galileo Galilei¹</h6>
+                                            <h6 style="font-family: 'Quicksand';">Berta Lange de Morretes²</h6>
+                                            <h6 style="font-family: 'Quicksand';">Isaac Newton³</h6>
+                                            <h6 style="font-family: 'Quicksand';">Cesar Lattes¹</h6>
+                                            <h6 style="font-family: 'Quicksand';">Stephen Hawking⁴</h6>                                            
+                                            <br>
+                                            <p style="color: #725C5C;">¹Universidade Estadual de Campinas
+                                            <br>²Universidade de São Paulo
+                                            <br>³Instituto Nacional de Pesquisas Espaciais
+                                            <br>⁴Universidade Federal do Rio de Janeiro</p> 
+                                            <br>
+                                            <p style="color: #725C5C;">¹Universidade Estadual de Campinas
+                                            <br>²Universidade de São Paulo
+                                            <br>³Instituto Nacional de Pesquisas Espaciais
+                                            <br>⁴Universidade Federal do Rio de Janeiro</p>            
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>                             
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            
+            <!--Espaco Card Resumo-->
+            <div class="marginLateralDireita">
+                <ul class="container justify-content-center">  
+                    <div class="row marginLateralEsquerda">
+                        <div class="col">
+                            <div class="card size-card-resumo" style="margin-top: 30px;" onclick="cardExpand()">
+                                <div class="card-header align-middle">
+                                  <h2 style="padding-top: 0px!important; padding-bottom: 0px!important; color: black;"><b>Resumo</b></h2>
+                                </div>
+                                <div class="card-body overflow-hidden" style="background-color: white;">                                                                 
+                                    <h6 class="ocultLinetext" style="font-family: 'Quicksand'; color: #5C5C5C;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut. Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum.    
+                                        Fusce vitae luctus dui. Donec id euismod mauris, in volutpat urna. Proin dapibus consequat feugiat. Proin dictum justo arcu, quis vestibulum augue lacinia quis. Sed dignissim dui nulla, ut faucibus mauris sodales id. Aliquam erat volutpat. Maecenas dolor enim, tincidunt id elit non, suscipit interdum turpis. Etiam finibus urna libero, eget interdum eros volutpat ullamcorper. Pellentesque et pretium lorem. Aenean interdum quis diam ac porttitor. Cras nec ipsum pulvinar, pharetra libero non, ornare enim. Etiam in laoreet odio.                                        
+                                        Nam eget tristique elit, at fermentum tellus. Mauris scelerisque ligula id eleifend feugiat. Donec eleifend vehicula sem nec dapibus. Integer scelerisque neque dui, in lacinia erat molestie eu. Phasellus maximus dui eget lacus porta tempor. Ut ex nibh, dignissim quis purus semper, efficitur facilisis turpis. Praesent blandit elementum ultricies. Aliquam sit amet enim sit amet nulla pulvinar lobortis consectetur non odio. Phasellus at lacus hendrerit, vulputate nisi sit amet, viverra mauris. Etiam eu scelerisque orci. Quisque sagittis, mi vitae pharetra iaculis, orci elit eleifend massa, eu posuere mauris odio id odio. Morbi eu libero luctus, consectetur lorem vel, interdum sapien. Aenean in porta arcu. Maecenas eu maximus massa.
+                                        Praesent velit dolor, dignissim sed quam ac, efficitur porta justo. Pellentesque porta pharetra felis ut hendrerit. Nulla facilisi. Aliquam erat volutpat. Nunc sit amet faucibus quam. Maecenas dapibus luctus dolor at viverra. Duis nec fringilla libero. Duis risus nibh, viverra ac orci nec, iaculis dictum sem. Aliquam at malesuada arcu. Aliquam erat volutpat. Donec varius ipsum purus, ut vehicula purus placerat vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>                                          
+                                </div>
+                            </div>
+                        </div>                    
+                    </div>
+                </ul>
+            </div>  
+            
+            
+            <div class="marginLateralDireita">
+                <ul class="container justify-content-center">  
+                    <div class="row marginLateralEsquerda">
+                        <div class="col">
+                            <div class="card size-card-resumo" style="margin-top: 30px;">
+                                <div class="card-header">
+                                  <h2 style="padding-top: 0px!important; padding-bottom: 0px!important; color: black;"><b>Discussões</b></h2>
+                                </div>
+                                <div class="card-body mx-auto" style="background-color: white;">                                                                 
+                                    
+                                    <div id="capaDiscussoes">
+                                        <div class="alignCenter">
+                                            <h3 class="alignCenter"><b>Compartilhe suas ideias ou dúvidas com os autores!</b></h3>
+                                        </div>
+                                        
+                                        <div class="alignCenter" style="margin-top: 27px;">
+                                            <img src="assets/img/icone1.png" style="margin-right: 51.74px;">
+                                            <img src="assets/img/icone2.png" style="margin-right: 51.74px;">
+                                            <img src="assets/img/icone3.png">
+                                        </div> 
+
+                                        <div class="alignCenter">
+                                            <h6 style="text-align: center; font-family: 'Quicksand'; color: #5C5C5C; margin-top: 35px; max-width: 626px;">Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</h6>
+                                        </div>
+                                    </div>  
+                                    
+                                    
+                                    <div id="sendSuccess" style="margin-bottom: 70px;">
+                                        <div class="alignCenter">
+                                            <h3 class="alignCenter"><b>Seu tópico foi enviado com sucesso! :D</b></h3>
+                                        </div> 
+
+                                        <div class="alignCenter">
+                                            <h6 style="text-align: center; font-family: 'Quicksand'; color: #5C5C5C; margin-top: 5px!important;">Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</h6>
+                                        </div>
+
+                                        <div>
+                                            <h6 style="text-align: center; font-family: 'Quicksand'; color: #F48F44; margin-top: 30px;"><b><u>Descubra outros trabalhos!</u><b></h6>
+                                        </div>
+                                    </div>
+
+                                    
+                                    <div id="sendDoubt">
+                                        <div class="alignCenter" style="margin-bottom: 10px;">
+                                            <h6 style="font-size: 14px; font-family: Quicksand; color: #4D4D4D;">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</h6>
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label"><h4 style="color: #ED7839; margin-bottom: -10px;"><b>Assunto</b></h4></label>
+                                            <input class="form-control" id="exampleFormControlInput1" placeholder="Defina um tópico sucinto para notificar os autores..." style="font-size: 14px; height: 39px; font-family: Quicksand; color: #4D4D4D;">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlTextarea1" class="form-label"><h4 style="color: #ED7839; margin-bottom: -10px;"><b>Conteúdo</b></h4></label>  
+                                              
+                                            <div class="card">                                                
+                                                <div class="card-body nopadding">
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                </div>
+                                                <div class="card-footer nopadding" style="background-color: #EAF1F2; height: 31px;">
+                                                    <div class="container nopadding">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <img src="assets/img/Shape.png" onclick="fontBold()" style="height: 10px; margin-right: 30px; margin-left: 20px;">
+                                                                <img src="assets/img/Shape (1).png" onclick="fontItalic()" style="height: 10px;">
+                                                            </div>
+
+                                                            <div class="col">
+                                                                <ul class="nav justify-content-end nopadding">  
+                                                                    <div class="nav-item">
+                                                                        <button type="button" onclick="sendButton(), addDoubt()" class="btn btn-orange" style="background-image: linear-gradient(#FEB254, #F0813D); height: 31px !important; width: 205px !important; border-radius: 0px;"><h4>Enviar</h4></button>
+                                                                    </div>
+                                                                </ul>                                                                 
+                                                            </div>
+                                                        </div>
+                                                    </div>                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    
+                                    <div style="margin-top: 30px;">
+                                        <div class="position-relative">
+                                            <div class="position-absolute top-50 start-50 translate-middle" style="z-index: 100;">
+                                                <button type="button" class="btn btn-orange" id="criaTopico" onclick="criaTopico(this.id)" style="background-image: linear-gradient(#FEB254, #F0813D);"><h4 id="setText"><img src="assets/img/icon - criar.png" style="margin-right: 6px;">criar tópico</h4></button>
+                                            </div>              
+                                            <hr class="m-0" />                               
+                                        </div>
+                                    </div> 
+
+                                    
+                                    <div id="cardUsuario" style="margin-top: 30px;"></div>
+                                    
+                                    
+                                    <div style="margin-top: 30px;">
+                                        <div class="card" style="width: auto;">
+                                            <div class="card-body" data-bs-toggle="collapse" href="#collapseComentario" aria-expanded="false" aria-controls="collapseComentario">
+                                                <h4 style="font-family: Quicksand; color: #ED7839;"><b>Assunto da pergunta aparece aqui</b></h4>
+                                                <h6 style="font-family: Quicksand; font-size: 12px; color: #5C5C5C;"><b>Carlos Henrique Santos</b></h6>
+                                                <h6 style="font-family: 'Quicksand'; color:black;">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</h6>                                          
+                                                
+                                                
+                                                <div class="alignLeft">
+                                                    <button type="button" class="btn btn-more" style="height: 18px;">
+                                                        <div class="position-relative">
+                                                            <div class="position-absolute top-50 start-50 translate-middle">
+                                                                <img src="assets/img/more.png" style="height: 18px;">
+                                                            </div>
+                                                        </div>
+                                                    </button>                                                
+                                                    <button type="button" class="btn btn-orange" style="height: 19px; width: 27px;">
+                                                        <div class="position-relative">
+                                                            <div class="position-absolute top-50 start-50 translate-middle">
+                                                                <img src="assets/img/heart.png">
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                    <h6 style="margin-left: 15px; font-family: 'Segoe UI Light';">1 likes</h6>
+                                                    <h6 style="margin-left: 15px; font-family: 'Segoe UI Light';">4 respostas</h6>
+                                                </div>                                                
+                                            </div> 
+                                            
+                                           
+                                            <div class="collapse" id="collapseComentario">
+                                                
+                                                <div class="card card-body" style="background-color: #F8F8F8; border-radius: 0px !important; border-color: #E7E7E7;">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col nopadding" >
+                                                                <h6 style="font-family: Quicksand; font-size: 12px; color: #5C5C5C;"><b>Adriano da Silva</b></h6>
+                                                            </div>
+
+                                                            <div class="col">                                                                
+                                                                <ul class="nav justify-content-end">  
+                                                                    <div class="nav-item">
+                                                                        <button type="button" class="btn btn-more"><h6 style="font-family: Quicksand; color: #ED7839;"><b>Autor</b><img src="assets/img/iconAutor.png" style="margin-left: 15px;"></h6></button>                                                                        
+                                                                    </div>
+                                                                </ul>  
+                                                            </div>                                                            
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col nopadding">
+                                                                <h6 style="font-family: 'Quicksand'; color: black;">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>                                       
+                                                </div>
+
+                                                <div class="card card-body" style="border-radius: 0px !important; border-color: #E7E7E7;">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col nopadding" >
+                                                                <h6 style="font-family: Quicksand; font-size: 12px; color: #5C5C5C;"><b>Carlos Henrique Santos</b></h6>
+                                                            </div>
+
+                                                            <div class="col" style="visibility: hidden;">                                                                
+                                                                <ul class="nav justify-content-end">  
+                                                                    <div class="nav-item">
+                                                                        <button type="button" class="btn btn-more"><h6 style="font-family: Quicksand; color: #ED7839;"><b>Autor</b><img src="assets/img/iconAutor.png" style="margin-left: 15px;"></h6></button>                                                                        
+                                                                    </div>
+                                                                </ul>  
+                                                            </div>                                                            
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col nopadding">
+                                                                <h6 style="font-family: 'Quicksand'; color: black;">Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo. Obrigada pela resposta, muito interessante o seu trabalho!</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>                                       
+                                                </div>
+
+                                                <div class="card card-body" style="background-color: #F8F8F8; border-radius: 0px !important; border-color: #E7E7E7;">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col nopadding" >
+                                                                <h6 style="font-family: Quicksand; font-size: 12px; color: #5C5C5C;"><b>Carmila Ferreira Andrade</b></h6>
+                                                            </div>
+
+                                                            <div class="col">                                                                
+                                                                <ul class="nav justify-content-end">  
+                                                                    <div class="nav-item">
+                                                                        <button type="button" class="btn btn-more"><h6 style="font-family: Quicksand; color: #ED7839;"><b>Coautor</b><img src="assets/img/iconAutor.png" style="margin-left: 15px;"></h6></button>                                                                        
+                                                                    </div>
+                                                                </ul>  
+                                                            </div>                                                            
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col nopadding">
+                                                                <h6 style="font-family: 'Quicksand'; color: black;">Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo. Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>                                       
+                                                </div>
+
+                                                <div class="card card-body" style="background-color: #F8F8F8; border-radius: 0px !important; border-color: #E7E7E7;">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col nopadding" >
+                                                                <h6 style="font-family: Quicksand; font-size: 12px; color: #5C5C5C;"><b>Ana Carolina</b></h6>
+                                                            </div>
+
+                                                            <div class="col">                                                                
+                                                                <ul class="nav justify-content-end">  
+                                                                    <div class="nav-item">
+                                                                        <button type="button" class="btn btn-more"><h6 style="font-family: Quicksand; color: #ED7839;"><b>Coautor</b><img src="assets/img/iconAutor.png" style="margin-left: 15px;"></h6></button>                                                                        
+                                                                    </div>
+                                                                </ul>  
+                                                            </div>                                                            
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col nopadding">
+                                                                <h6 style="font-family: 'Quicksand'; color: black;">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>                                       
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    
+                                    <div style="margin-top: 30px;">
+                                        <div class="card" style="width: auto;">
+                                            <div class="card-body" data-bs-toggle="collapse" href="#collapseComentario02" aria-expanded="false" aria-controls="collapseComentario02">
+                                                <h4 style="font-family: Quicksand; color: #ED7839;"><b>Assunto da pergunta aparece aqui</b></h4>
+                                                <h6 style="font-family: Quicksand; font-size: 12px; color: #5C5C5C;"><b>Carlos Henrique Santos</b></h6>
+                                                <h6 style="font-family: 'Quicksand'; color:black;">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo?</h6>                                          
+                                                
+                                                
+                                                <div class="alignLeft">
+                                                    <button type="button" class="btn btn-more" style="height: 18px;">
+                                                        <div class="position-relative">
+                                                            <div class="position-absolute top-50 start-50 translate-middle">
+                                                                <img src="assets/img/more.png" style="height: 18px;">
+                                                            </div>
+                                                        </div>
+                                                    </button>                                                
+                                                    <button type="button" class="btn btn-orange" style="height: 19px; width: 27px;">
+                                                        <div class="position-relative">
+                                                            <div class="position-absolute top-50 start-50 translate-middle">
+                                                                <img src="assets/img/heart.png">
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                    <h6 style="margin-left: 15px; font-family: 'Segoe UI Light';">2 likes</h6>
+                                                    <h6 style="margin-left: 15px; font-family: 'Segoe UI Light';">4 respostas</h6>
+                                                </div>                                                
+                                            </div> 
+                                            
+                                            
+                                            <div class="collapse" id="collapseComentario02">
+                                                
+                                                <div class="card card-body" style="background-color: #F8F8F8; border-radius: 0px !important; border-color: #E7E7E7;">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col nopadding" >
+                                                                <h6 style="font-family: Quicksand; font-size: 12px; color: #5C5C5C;"><b>Adriano da Silva</b></h6>
+                                                            </div>
+
+                                                            <div class="col">                                                                
+                                                                <ul class="nav justify-content-end">  
+                                                                    <div class="nav-item">
+                                                                        <button type="button" class="btn btn-more"><h6 style="font-family: Quicksand; color: #ED7839;"><b>Autor</b><img src="assets/img/iconAutor.png" style="margin-left: 15px;"></h6></button>                                                                        
+                                                                    </div>
+                                                                </ul>  
+                                                            </div>                                                            
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col nopadding">
+                                                                <h6 style="font-family: 'Quicksand'; color: black;">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>                                       
+                                                </div>
+
+                                                <div class="card card-body" style="border-radius: 0px !important; border-color: #E7E7E7;">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col nopadding" >
+                                                                <h6 style="font-family: Quicksand; font-size: 12px; color: #5C5C5C;"><b>Carlos Henrique Santos</b></h6>
+                                                            </div>
+
+                                                            <div class="col" style="visibility: hidden;">                                                                
+                                                                <ul class="nav justify-content-end">  
+                                                                    <div class="nav-item">
+                                                                        <button type="button" class="btn btn-more"><h6 style="font-family: Quicksand; color: #ED7839;"><b>Autor</b><img src="assets/img/iconAutor.png" style="margin-left: 15px;"></h6></button>                                                                        
+                                                                    </div>
+                                                                </ul>  
+                                                            </div>                                                            
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col nopadding">
+                                                                <h6 style="font-family: 'Quicksand'; color: black;">Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo. Obrigada pela resposta, muito interessante o seu trabalho!</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>                                       
+                                                </div>
+
+                                                <div class="card card-body" style="background-color: #F8F8F8; border-radius: 0px !important; border-color: #E7E7E7;">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col nopadding" >
+                                                                <h6 style="font-family: Quicksand; font-size: 12px; color: #5C5C5C;"><b>Carmila Ferreira Andrade</b></h6>
+                                                            </div>
+
+                                                            <div class="col">                                                                
+                                                                <ul class="nav justify-content-end">  
+                                                                    <div class="nav-item">
+                                                                        <button type="button" class="btn btn-more"><h6 style="font-family: Quicksand; color: #ED7839;"><b>Coautor</b><img src="assets/img/iconAutor.png" style="margin-left: 15px;"></h6></button>                                                                        
+                                                                    </div>
+                                                                </ul>  
+                                                            </div>                                                            
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col nopadding">
+                                                                <h6 style="font-family: 'Quicksand'; color: black;">Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo. Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>                                       
+                                                </div>
+
+                                                <div class="card card-body" style="background-color: #F8F8F8; border-radius: 0px !important; border-color: #E7E7E7;">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col nopadding" >
+                                                                <h6 style="font-family: Quicksand; font-size: 12px; color: #5C5C5C;"><b>Ana Carolina</b></h6>
+                                                            </div>
+
+                                                            <div class="col">                                                                
+                                                                <ul class="nav justify-content-end">  
+                                                                    <div class="nav-item">
+                                                                        <button type="button" class="btn btn-more"><h6 style="font-family: Quicksand; color: #ED7839;"><b>Coautor</b><img src="assets/img/iconAutor.png" style="margin-left: 15px;"></h6></button>                                                                        
+                                                                    </div>
+                                                                </ul>  
+                                                            </div>                                                            
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col nopadding">
+                                                                <h6 style="font-family: 'Quicksand'; color: black;">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>                                       
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                
+                            </div>                            
+                        </div>                    
+                    </div>
+                </ul>
+            </div> 
+        </div>
+
+        
+        <div class="PageVazia" id="vazio"></div> 
+        
+        
+        <footer>
+            <div class="container" style="margin-bottom: 30px;">
+                <div class="row">
+                    <hr class="m-0" /> 
+                    <div class="col">
+                        <div class="alignCenter">
+                            <img src="assets/img/galoa-logo.svg" style="width: 200px; margin-top: 20px;">
+                        </div>
+                        <a class="alignCenter" href="https://galoa.com.br/eventos-cientificos/proceedings-e-anais-de-eventos">
+                            <button type="button" class="btn btn-violet" ><h4>saiba mais</h4></button>
+                        </a>                        
+                    </div>
+                    <div id="containerText" class="col-6 col-md-9 alignCenter">
+                        <h6 class="" style="font-family: 'Quicksand'; color:black;  margin-top: 20px;"><b>Preservar a memória da conferência e aumentar o alcance do conhecimento científico</b> é a razão pela qual o Processo de Galoá foi criado.
+                        <br><br>Os trabalhos da conferência publicados aqui são de acesso aberto e nossa indexação mantém os trabalhos apresentado na conferência fácil de encontrar e citar.</h6> 
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+        
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

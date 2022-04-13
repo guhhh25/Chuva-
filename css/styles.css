@@ -1,0 +1,385 @@
+body{
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
+a{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    color: #725C5C !important;
+    font-size: 0.9375em;       
+}
+
+h1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 22px;
+    color: #725C5C;
+}
+
+h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 20px;
+    color: #ED7839;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 18px;
+    color: #ED7839;
+}
+
+h4{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 16px;
+    color: white;    
+}
+
+h6{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 14px;
+    color: #725C5C;    
+}
+
+p{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-size: 12px;
+    color: black;
+}
+
+.m-0{
+    color: gray;
+    z-index: 99;
+}
+
+.divisor{
+    border-top: 1px solid #E7E7E7;
+    max-width: 70vw;
+    min-width: 50vw;
+}
+
+.PageTrabalhos{
+    width: auto;
+    height: auto;
+    background-color: white;         
+}
+
+.tituloTrabalhos{
+    width: auto;
+    height: auto;
+    background-color: #FDF1EB;
+    padding-top: 5px;   
+    padding-left: 40px; 
+}
+
+.marginLateralDireita{
+    margin-left: 2vw;
+}
+
+.marginLateralEsquerda{
+    margin-right: 1vw;
+}
+
+.PageVazia{
+    width: auto;
+    height: 100vh;
+    background-color: #FDF1EB;   
+    display: none; 
+}
+
+.rectangleMenu{    
+    width: 220px;
+    height: 68px;
+    background-image: linear-gradient(#FFB354, #EE7A3A);  
+}
+
+.navbar-nav{
+    margin-left: -12px; 
+    margin-top: -12px;   
+}
+
+.alignCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.alignLeft{
+    display: flex;
+    justify-content: start;
+    align-items: initial; 
+}
+
+.alignVertical{
+    display: flex;    
+    align-items: center; 
+}
+
+.navbar{
+    -webkit-box-shadow: 0px 0px 18px -4px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 18px -4px rgba(0,0,0,1);
+    box-shadow: 0px 0px 18px -4px rgba(0,0,0,1);    
+}
+
+li:hover{
+    background-color: #FDF1EB;       
+}
+
+.btn{
+    width: 97px;
+    height: 34px;
+    background-color: #FDF1EB;
+    margin-bottom: 10px;
+} 
+
+.btn:hover{    
+    background-color: #FDF1EB !important;    
+}
+
+.dropdown-item:hover{
+    background-color: gray;
+}
+
+.btn-orange{
+    background-color: #ED7839;  
+    width: auto;     
+}
+
+.btn-orange:hover{
+    background-color: #ED7839 !important; 
+    opacity: 0.6;    
+}
+
+.btn-violet{
+    background-color: rgb(113, 71, 142);  
+    width: 200px;    
+    margin-top: 10px; 
+}
+
+.btn-violet:hover{
+    background-color: rgb(113, 71, 142) !important; 
+    opacity: 0.6;    
+}
+
+.btn-more{
+    background-color: transparent;  
+    width: auto;     
+}
+
+.btn-more:hover{
+    background-color: white !important; 
+    opacity: 0.2;    
+}
+
+.size-card-detalhes{
+    width: 242px;
+    height: 439px;
+}
+
+.size-card-resumo{
+    width: auto;
+    height: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+    background: #E7E7E7;  
+    border-radius: 4px;    
+} 
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #BFBFBF;
+    border-radius: 4px;      
+}
+
+iframe{    
+    height: 439px !important;
+}
+
+.card-header{
+    background-color: #FDF1EB;
+}
+
+.ocultLinetext{
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#sendDoubt, #sendSuccess{
+    display: none;
+}
+
+#imgStyle {
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+#Notification {
+    position: relative;
+}
+
+#notIcon {
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-color: green;
+    height: 10px;
+    width: 10px;
+    border-radius: 40px;
+}
+
+.tituloH4{
+    font-family: 'Quicksand';
+    color: #ED7839;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;     
+}
+
+.tituloH6{
+    font-family: 'Quicksand';
+    font-size: 12px;
+    color: #5C5C5C; 
+    font-weight: bold;   
+}
+
+.tituloTexto{
+    font-family: 'Quicksand';
+    font-size: 14px;
+    color: black;    
+}
+
+.mensagemPrimeiroPlano{
+    font-family: 'Quicksand';
+    font-size: 16px;
+    color: #707070;   
+    font-weight: bold;    
+    width: 300px;         
+}
+
+.blurCard{
+    background-color: #ebebeb;
+    filter: blur(2px);    
+    z-index: 1000;    
+}
+
+.backgroundCard{
+    background-color: transparent;  
+    z-index: 10000;      
+}
+
+.imagemFeedback{
+    background-image: url("../assets/img/feedback.png");
+    width: 30px;
+    height: 23px;
+    background-repeat: no-repeat; 
+    margin-bottom: 8px;   
+}
+
+.mensagemEditarTopico{
+    font-family: 'Segoe UI Light';
+    font-size: 14px;
+    color: #ED7839;   
+    text-decoration: underline;   
+    margin-bottom: 80px; 
+}
+
+/*Screen Desktop*/
+@media (min-width: 768px) { 
+
+
+
+   
+
+    .navbar {
+        position: fixed;
+        width: 220px;
+        height: 100%;
+        align-items: baseline;           
+    }
+
+    .Page{        
+        padding-left: 250px;
+    }
+
+    .navbar-brand{
+        display: none;
+    }    
+
+    .PageTrabalhos{        
+        margin-left: 220px;  
+    }
+
+    footer{
+        margin-left: 220px;
+    }
+}
+
+/*Screen Mobile*/
+@media (max-width: 768px) {     
+    .navbar-brand-desktop{
+        display: none;        
+    }    
+
+    .nav-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+    }
+
+    .navbar-nav{        
+        margin-top: 0px;           
+        background-color: white !important;
+        margin-right: -12px;
+        margin-bottom: -12px;
+    }
+
+    .navbar{
+        background-image: linear-gradient(#FFB354, #EE7A3A) !important;
+    }
+
+    .rectangleMenu{
+        background-image: none;
+    }   
+
+    .tituloTrabalhos{         
+        padding-left: 0px; 
+    }
+
+    .marginLateralDireita{
+        margin-left: 0px;
+    }
+
+    .marginLateralEsquerda{
+        margin-right: 0px;
+    }
+
+    .size-card-detalhes{
+        width: auto;
+        height: 439px;
+    }     
+
+    #containerText{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
